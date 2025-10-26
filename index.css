@@ -14,22 +14,17 @@ header{
     height: 60px;
     opacity: 0.9;
     border-bottom: 3px solid rgb(114, 110, 110);
+    width: auto;
 
     
 }
 
 .logo{
     width: 45px;
-    border-radius: 50%;
-    position: relative;
-    top: 2px;
-    margin-left: 32px;
+    border-radius: 100%;
+    margin: 32px;
     
 }
-.logo_container{
-    margin-left: 1%;
-}
-
 .logo_container:hover{
     opacity: 0.8;
     
@@ -40,7 +35,7 @@ header{
     min-width: 550px;
     justify-content: space-between;
     
-border-bottom: 2px solid transparent;
+    border-bottom: 2px solid transparent;
 
 
 }
@@ -51,11 +46,16 @@ border-bottom: 2px solid transparent;
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
-    margin: 10px;
+    
+    
+    margin: 10px 0;
     padding: 15px 0 13.5px 0;
     transition: 0.2s;
 
+
 }
+
+
 
 .nav_bar :hover{
 color: rgb(124, 96, 150);
@@ -64,9 +64,21 @@ border-bottom: 2px solid rgb(40, 112, 193);
 
 }
 
+.nav_bar .more{
+    margin-top: 7.5px ;
+}
+
 .nav_bar a sup{
     color: rgb(216, 0, 0);
     font-size: 10px;
+}
+
+
+.nav_bar a:hover sup{
+    color: rgb(255, 0, 0); 
+    font-size: 12px;
+    text-decoration: none;   
+    border-bottom: 0; 
 }
 
 
@@ -75,12 +87,15 @@ border-bottom: 2px solid rgb(40, 112, 193);
 display: flex;
 min-width: 320px;
 align-items: center;
+margin: 5px;
+
 
     min-width: 120px;
     display: flex;
     flex-shrink: 1;
     flex-grow: 1;
     max-width: 560px;
+
 }
 
 
@@ -90,11 +105,13 @@ align-items: center;
     border : 0px;
     border-radius: 0px 8px 8px 0px;
     height: 36px;
-
-    min-width: 121px;
+    
+    min-width: 120px;
     display: flex;
     flex-shrink: 1;
     flex-grow: 1;
+    max-width: 560px;
+
 }
 
 
@@ -104,7 +121,9 @@ align-items: center;
     height: 36px;
     padding: 6px;
     justify-content: center;
-    border-radius: 8px 0px 0px 8px  ;
+    border-radius: 8px 0px 0px 8px;
+    
+    
 }
 
 
@@ -120,7 +139,7 @@ align-items: center;
 
 .material-symbols-outlined {
   font-variation-settings:
-  'FILL' 0,
+  'FILL' 0, 
   'wght' 400,
   'GRAD' 0,
   'opsz' 24
@@ -130,7 +149,6 @@ align-items: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 46px;
     margin: 5px;
     
     cursor: pointer;
@@ -141,19 +159,22 @@ align-items: center;
 .action_bar{
     display: flex;
     justify-content: space-evenly;
-    min-width: 140px;
 }
 
+@media screen and (max-width: 964px )
+{
 
+.action_bar{
+    padding: 28px;
+}
+}
 .profile-text,.fav-text,.help-text{
     color: rgba(46, 71, 74, 0.633);
     font-size: 14px;
     transition: 0.1s;
     font-weight: normal;
 }
-.profilebox{
-    margin-left: 30px;
-}
+
 
 
 .icon{
@@ -191,14 +212,55 @@ color: red;
 
 .banner{
     width: 100%;
-    opacity: 0.9;
-    margin: 20px 0;
+    margin: 20px 0 10px 0;
+    height: 380px;
 }
+
+.item_heading{
+    text-transform: uppercase;
+    color: rgb(28, 121, 235);
+    font-weight: bolder;
+    letter-spacing: 1px;
+    font-size: 24px;
+    margin-left: 15px;
+}
+
+.all_items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+
+.item{
+    width: 236px;
+    border: 1px solid rgb(180, 172, 239);
+    margin: 24px 0;
+
+}
+
+
+
 
 .catogery_heading{
     text-transform: uppercase;
     color: rgb(28, 121, 235);
-    font-weight: 800;
-    letter-spacing: 2px;
-    font-size: 18px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    font-size: 24px;
+    margin: 10px 0px 0 18px;
 }
+.all_catogery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+.catogery{
+    height: 260px;
+    width: 400px;
+    border: 1px solid rgb(180, 172, 239);
+
+}
+
+
