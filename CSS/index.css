@@ -204,6 +204,11 @@ color: rgb(100, 148, 175);
 color: red;
 }
 
+.actionlink{
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
 
 
 
@@ -298,6 +303,14 @@ color: red;
             transform: scale(1.15);
             margin: 0px 20px 42px 20px;
         }
+
+.button{
+    background-color: rgb(45, 143, 255);
+    color: rgb(252, 221, 221);
+
+padding: 1%;   }
+    
+
 
 
         .foot-container{
